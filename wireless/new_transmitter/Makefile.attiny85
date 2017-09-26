@@ -1,0 +1,38 @@
+MCU=attiny85
+#m16 for atmega16a
+USBASP_PART=t85
+CC=avr-gcc
+CPP=avr-g++
+OBJCOPY=avr-objcopy
+RADIO_HEAD_CODE=RadioHead
+RADIO_HEAD_OBJECT=RH_ASK.o
+
+# optimize for size:
+	CFLAGS=-g -mmcu=$(MCU) -Wall -Wstrict-prototypes -Os -mcall-prologues -I $(RADIO_HEAD_CODE) -DF_CPU=8000000UL -DRH_PLATFORM=RH_PLATFORM_GENERIC_AVR8 -DRH_ASK_TX_PIN=PIN4 -DRH_ASK_TX_DDR=DDRB -DRH_ASK_RX_DDR=DDRB -DRH_ASK_RX_PIN=PIN3 -DRH_ASK_TIMER_INDEX=0 -DHIGH=1 -DLOW=0 -DRH_ASK_RX_PORT=PORTB -DRH_ASK_TX_PORT=PORTB
+
+all: radiohead transmitter.hex
+
+#The firmware, loaded.
+transmitter.hex : transmitter.out
+	$(OBJCOPY) -R .eeprom -O ihex transmitter.out transmitter.hex
+
+#An out file ? what is this for?
+transmitter.out : transmitter.o
+	$(CPP) $(CFLAGS) -o transmitter.out -Wl,-Map,transmitter.map transmitter.o $(RADIO_HEAD_CODE)/$(RADIO_HEAD_OBJECT) $(RADIO_HEAD_CODE)/RHCRC.o $(RADIO_HEAD_CODE)/RHGenericDriver.o
+
+#This is how compile happens.
+%.o : %.cpp $(DEPS)
+	$(CPP) -c -o $@ $< $(CFLAGS)
+
+.PHONY: radiohead
+
+radiohead:
+	$(MAKE) -C $(RADIO_HEAD_CODE)
+
+# erase the AVR before it is programmed
+load: transmitter.hex
+	avrdude -c usbasp -p $(USBASP_PART) -b 115200 -u -U transmitter.hex
+
+clean:
+	rm -f *.o *.map *.out *.hex
+	make -C $(RADIO_HEAD_CODE) clean

@@ -1,0 +1,16 @@
+eeschema (2013-jul-07)-stable  >> Creation date: Saturday 16 January 2016 03:01:51 PM IST
+#Cmp ( order = Reference )
+| CON1       AVR-ISP-10  
+| D1         LED         
+| IC1        ATTINY85-P  
+| R1         1k          
+#End Cmp
+
+#Cmp ( order = Value )
+| AVR-ISP-10   CON1      
+| LED          D1        
+| ATTINY85-P   IC1       
+| 1k           R1        
+#End Cmp
+
+#End List

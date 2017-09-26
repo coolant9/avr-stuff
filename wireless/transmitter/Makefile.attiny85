@@ -1,0 +1,36 @@
+MCU=attiny85
+#m16 for atmega16a
+USBASP_PART=t85
+CC=avr-gcc
+OBJCOPY=avr-objcopy
+VIRTUAL_WIRE_CODE=VirtualWire
+
+# optimize for size:
+	CFLAGS=-g -mmcu=$(MCU) -Wall -Wstrict-prototypes -Os -mcall-prologues -I $(VIRTUAL_WIRE_CODE) -DF_CPU=8000000UL
+
+all: virtualwire transmitter.hex
+
+#The firmware, loaded.
+transmitter.hex : transmitter.out
+	$(OBJCOPY) -R .eeprom -O ihex transmitter.out transmitter.hex
+
+#An out file ? what is this for?
+transmitter.out : transmitter.o
+	$(CC) $(CFLAGS) -o transmitter.out -Wl,-Map,transmitter.map transmitter.o VirtualWire/VirtualWire.o
+
+#This is how compile happens.
+%.o : %.cpp $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+.PHONY: virtualwire
+
+virtualwire:
+	$(MAKE) -C $(VIRTUAL_WIRE_CODE)
+
+# erase the AVR before it is programmed
+load: transmitter.hex
+	avrdude -c usbasp -p $(USBASP_PART) -b 115200 -u -U transmitter.hex
+
+clean:
+	rm -f *.o *.map *.out *.hex
+	make -C $(VIRTUAL_WIRE_CODE) clean

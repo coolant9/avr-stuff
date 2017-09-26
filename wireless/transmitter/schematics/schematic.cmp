@@ -1,0 +1,31 @@
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Saturday 16 January 2016 03:56:52 PM IST
+
+BeginCmp
+TimeStamp = /5695753F;
+Reference = CON1;
+ValeurCmp = AVR-ISP-10;
+IdModule  = PIN_ARRAY_5x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /569574E7;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /569574C8;
+Reference = IC1;
+ValeurCmp = ATTINY85-P;
+IdModule  = DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /569573E2;
+Reference = R1;
+ValeurCmp = 1k;
+IdModule  = R1;
+EndCmp
+
+EndListe

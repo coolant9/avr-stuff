@@ -1,0 +1,36 @@
+eeschema (2013-jul-07)-stable  >> Creation date: Sunday 17 January 2016 08:36:07 AM IST
+#Cmp ( order = Reference )
+| CON1       AVR-ISP-10  
+| CON2       USB-MINI-B  
+| D1         LED         
+| IC1        ATTINY85-P  
+| K1         CONN_3      
+| K2         CONN_3      
+| K3         CONN_3      
+| K4         CONN_3      
+| K5         CONN_3      
+| P1         CONN_6      
+| P2         CONN_4      
+| P3         CONN_2      
+| P4         CONN_4      
+| R1         1k          
+#End Cmp
+
+#Cmp ( order = Value )
+| USB-MINI-B   CON2      
+| AVR-ISP-10   CON1      
+| LED          D1        
+| ATTINY85-P   IC1       
+| CONN_3       K1        
+| CONN_3       K2        
+| CONN_3       K3        
+| CONN_3       K4        
+| CONN_3       K5        
+| CONN_6       P1        
+| CONN_4       P2        
+| CONN_2       P3        
+| CONN_4       P4        
+| 1k           R1        
+#End Cmp
+
+#End List

@@ -1,0 +1,148 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=avr-gcc$/;"	m
+CC	VirtualWire/Makefile	/^CC=avr-gcc$/;"	m
+CFLAGS	Makefile	/^	CFLAGS=-g -mmcu=$(MCU) -Wall -Wstrict-prototypes -Os -mcall-prologues -I $(VIRTUAL_WIRE_CODE) -DF_CPU=1000000UL$/;"	m
+CFLAGS	VirtualWire/Makefile	/^CFLAGS=-c -g -mmcu=$(MCU) -Wall -Os -mcall-prologues -I . -DF_CPU=1000000UL$/;"	m
+CPP	VirtualWire/Makefile	/^CPP=avr-g++$/;"	m
+DELAY_MS	transmitter.c	21;"	d	file:
+LED_PIN	transmitter.c	20;"	d	file:
+MAPLE_TIMER	VirtualWire/VirtualWire.h	279;"	d
+MCU	Makefile	/^MCU=attiny85$/;"	m
+MCU	VirtualWire/Makefile	/^MCU=attiny85$/;"	m
+OBJCOPY	Makefile	/^OBJCOPY=avr-objcopy$/;"	m
+OBJCOPY	VirtualWire/Makefile	/^OBJCOPY=avr-objcopy$/;"	m
+SIGNAL	VirtualWire/VirtualWire.cpp	394;"	d	file:
+SIGNAL	VirtualWire/VirtualWire.cpp	396;"	d	file:
+TIMER1_COMPA_vect	VirtualWire/VirtualWire.cpp	/^void TIMER1_COMPA_vect(void)$/;"	f
+TIMER1_COMPA_vect	VirtualWire/VirtualWire.cpp	398;"	d	file:
+Timer_A_int	VirtualWire/VirtualWire.cpp	/^interrupt(TIMER0_A0_VECTOR) Timer_A_int(void) $/;"	f
+USBASP_PART	Makefile	/^USBASP_PART=t85$/;"	m
+VIRTUAL_WIRE_CODE	Makefile	/^VIRTUAL_WIRE_CODE=VirtualWire$/;"	m
+VW_HEADER_LEN	VirtualWire/VirtualWire.h	329;"	d
+VW_MAX_MESSAGE_LEN	VirtualWire/VirtualWire.h	292;"	d
+VW_MAX_MESSAGE_LEN	VirtualWire/VirtualWire_Config.h	34;"	d
+VW_MAX_PAYLOAD	VirtualWire/VirtualWire.h	301;"	d
+VW_PLATFORM	VirtualWire/VirtualWire.h	255;"	d
+VW_PLATFORM	VirtualWire/VirtualWire.h	257;"	d
+VW_PLATFORM	VirtualWire/VirtualWire.h	259;"	d
+VW_PLATFORM	VirtualWire/VirtualWire.h	261;"	d
+VW_PLATFORM	VirtualWire/VirtualWire_Config.h	7;"	d
+VW_PLATFORM_ARDUINO	VirtualWire/VirtualWire.h	246;"	d
+VW_PLATFORM_GENERIC_AVR8	VirtualWire/VirtualWire.h	249;"	d
+VW_PLATFORM_MSP430	VirtualWire/VirtualWire.h	247;"	d
+VW_PLATFORM_STM32	VirtualWire/VirtualWire.h	248;"	d
+VW_PLATFORM_UNO32	VirtualWire/VirtualWire.h	250;"	d
+VW_RAMP_ADJUST	VirtualWire/VirtualWire.h	316;"	d
+VW_RAMP_INC	VirtualWire/VirtualWire.h	312;"	d
+VW_RAMP_INC_ADVANCE	VirtualWire/VirtualWire.h	320;"	d
+VW_RAMP_INC_RETARD	VirtualWire/VirtualWire.h	318;"	d
+VW_RAMP_TRANSITION	VirtualWire/VirtualWire.h	314;"	d
+VW_RX_DDR	VirtualWire/VirtualWire_Config.h	22;"	d
+VW_RX_PIN	VirtualWire/VirtualWire_Config.h	23;"	d
+VW_RX_PORT	VirtualWire/VirtualWire_Config.h	21;"	d
+VW_RX_RAMP_LEN	VirtualWire/VirtualWire.h	304;"	d
+VW_RX_SAMPLES_PER_BIT	VirtualWire/VirtualWire.h	297;"	d
+VW_TIMER_INDEX	VirtualWire/VirtualWire_Config.h	30;"	d
+VW_TIMER_VECTOR	VirtualWire/VirtualWire.cpp	110;"	d	file:
+VW_TIMER_VECTOR	VirtualWire/VirtualWire.cpp	776;"	d	file:
+VW_TIMER_VECTOR	VirtualWire/VirtualWire.cpp	778;"	d	file:
+VW_TIMER_VECTOR	VirtualWire/VirtualWire.cpp	780;"	d	file:
+VW_TX_DDR	VirtualWire/VirtualWire_Config.h	17;"	d
+VW_TX_PIN	VirtualWire/VirtualWire_Config.h	18;"	d
+VW_TX_PORT	VirtualWire/VirtualWire_Config.h	16;"	d
+VirtualWire_Config_h	VirtualWire/VirtualWire_Config.h	2;"	d
+VirtualWire_h	VirtualWire/VirtualWire.h	240;"	d
+WGM12	VirtualWire/VirtualWire_Config.h	32;"	d
+WGM12	VirtualWire/avr.cpp	1;"	d	file:
+WGM12	VirtualWire/avr.h	1;"	d
+WGM12	VirtualWire/mavr.h	1;"	d
+_COMB	VirtualWire/VirtualWire.cpp	62;"	d	file:
+_UTIL_CRC16_H_	VirtualWire/VWutil/crc16.h	39;"	d
+__COMB	VirtualWire/VirtualWire.cpp	61;"	d	file:
+_crc_ccitt_update	VirtualWire/VWutil/crc16.h	/^    uint16_t _crc_ccitt_update (uint16_t crc, uint8_t data)$/;"	f
+_crc_ibutton_update	VirtualWire/VWutil/crc16.h	/^    uint8_t _crc_ibutton_update(uint8_t crc, uint8_t data)$/;"	f
+abs	VirtualWire/VirtualWire.h	286;"	d
+crc16_update	VirtualWire/VWutil/crc16.h	/^    uint16_t crc16_update(uint16_t crc, uint8_t a)$/;"	f
+crc_xmodem_update	VirtualWire/VWutil/crc16.h	/^    uint16_t crc_xmodem_update (uint16_t crc, uint8_t data)$/;"	f
+double	VirtualWire/VirtualWire.h	287;"	d
+hi8	VirtualWire/VWutil/crc16.h	44;"	d
+lo8	VirtualWire/VWutil/crc16.h	43;"	d
+main	transmitter.c	/^int main(void)$/;"	f
+my_vw_timerSetup	VirtualWire/avr.cpp	/^	static inline void my_vw_timerSetup(uint8_t speed)$/;"	f	file:
+my_vw_timerSetup	VirtualWire/avr.h	/^	static inline void my_vw_timerSetup(uint8_t speed)$/;"	f
+my_vw_timerSetup	VirtualWire/mavr.h	/^	static inline void my_vw_timerSetup(uint8_t speed)$/;"	f
+round	VirtualWire/VirtualWire.h	288;"	d
+symbols	VirtualWire/VirtualWire.cpp	/^static uint8_t symbols[] =$/;"	v	file:
+vw_Int_Handler	VirtualWire/VirtualWire.cpp	/^void vw_Int_Handler()$/;"	f
+vw_crc	VirtualWire/VirtualWire.cpp	/^uint16_t vw_crc(uint8_t *ptr, uint8_t count)$/;"	f
+vw_delay_1ms	VirtualWire/VirtualWire.cpp	105;"	d	file:
+vw_digitalRead_rx	VirtualWire/VirtualWire.cpp	101;"	d	file:
+vw_digitalRead_rx	VirtualWire/VirtualWire.cpp	45;"	d	file:
+vw_digitalWrite_ptt	VirtualWire/VirtualWire.cpp	47;"	d	file:
+vw_digitalWrite_ptt	VirtualWire/VirtualWire.cpp	75;"	d	file:
+vw_digitalWrite_ptt	VirtualWire/VirtualWire.cpp	89;"	d	file:
+vw_digitalWrite_tx	VirtualWire/VirtualWire.cpp	46;"	d	file:
+vw_digitalWrite_tx	VirtualWire/VirtualWire.cpp	95;"	d	file:
+vw_event_rx_byte_internal	VirtualWire/VirtualWire.cpp	138;"	d	file:
+vw_event_rx_byte_internal	VirtualWire/VirtualWire.cpp	140;"	d	file:
+vw_event_rx_done	VirtualWire/VirtualWire.cpp	134;"	d	file:
+vw_event_tx_done	VirtualWire/VirtualWire.cpp	130;"	d	file:
+vw_get_message	VirtualWire/VirtualWire.cpp	/^uint8_t vw_get_message(uint8_t* buf, uint8_t* len)$/;"	f
+vw_get_rx_bad	VirtualWire/VirtualWire.cpp	/^uint8_t vw_get_rx_bad()$/;"	f
+vw_get_rx_good	VirtualWire/VirtualWire.cpp	/^uint8_t vw_get_rx_good()$/;"	f
+vw_have_message	VirtualWire/VirtualWire.cpp	/^uint8_t vw_have_message()$/;"	f
+vw_pinSetup	VirtualWire/VirtualWire.cpp	68;"	d	file:
+vw_pinSetup	VirtualWire/VirtualWire.cpp	83;"	d	file:
+vw_pll	VirtualWire/VirtualWire.cpp	/^void vw_pll()$/;"	f
+vw_ptt_inverted	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_ptt_inverted = 0;$/;"	v	file:
+vw_ptt_pin	VirtualWire/VirtualWire.cpp	/^	static uint8_t vw_ptt_pin = 10;	$/;"	v	file:
+vw_rx_active	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_active = 0;$/;"	v	file:
+vw_rx_bad	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_bad = 0;$/;"	v	file:
+vw_rx_bit_count	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_bit_count = 0;$/;"	v	file:
+vw_rx_bits	VirtualWire/VirtualWire.cpp	/^static uint16_t vw_rx_bits = 0;$/;"	v	file:
+vw_rx_buf	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_buf[VW_MAX_MESSAGE_LEN];$/;"	v	file:
+vw_rx_count	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_count = 0;$/;"	v	file:
+vw_rx_done	VirtualWire/VirtualWire.cpp	/^static volatile uint8_t vw_rx_done = 0;$/;"	v	file:
+vw_rx_enabled	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_enabled = 0;$/;"	v	file:
+vw_rx_good	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_good = 0;$/;"	v	file:
+vw_rx_integrator	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_integrator = 0;$/;"	v	file:
+vw_rx_inverted	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_inverted = 0;$/;"	v	file:
+vw_rx_last_sample	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_last_sample = 0;$/;"	v	file:
+vw_rx_len	VirtualWire/VirtualWire.cpp	/^static volatile uint8_t vw_rx_len = 0;$/;"	v	file:
+vw_rx_pin	VirtualWire/VirtualWire.cpp	/^	static uint8_t vw_rx_pin = 11;$/;"	v	file:
+vw_rx_pll_ramp	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_pll_ramp = 0;$/;"	v	file:
+vw_rx_sample	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_rx_sample = 0;$/;"	v	file:
+vw_rx_start	VirtualWire/VirtualWire.cpp	/^void vw_rx_start()$/;"	f
+vw_rx_stop	VirtualWire/VirtualWire.cpp	/^void vw_rx_stop()$/;"	f
+vw_send	VirtualWire/VirtualWire.cpp	/^uint8_t vw_send(uint8_t* buf, uint8_t len)$/;"	f
+vw_set_ptt_inverted	VirtualWire/VirtualWire.cpp	/^void vw_set_ptt_inverted(uint8_t inverted)$/;"	f
+vw_set_ptt_pin	VirtualWire/VirtualWire.cpp	/^void vw_set_ptt_pin(uint8_t pin)$/;"	f
+vw_set_rx_inverted	VirtualWire/VirtualWire.cpp	/^void vw_set_rx_inverted(uint8_t inverted)$/;"	f
+vw_set_rx_pin	VirtualWire/VirtualWire.cpp	/^void vw_set_rx_pin(uint8_t pin)$/;"	f
+vw_set_tx_pin	VirtualWire/VirtualWire.cpp	/^void vw_set_tx_pin(uint8_t pin)$/;"	f
+vw_setup	VirtualWire/VirtualWire.cpp	/^void vw_setup(uint16_t speed)$/;"	f
+vw_symbol_6to4	VirtualWire/VirtualWire.cpp	/^uint8_t vw_symbol_6to4(uint8_t symbol)$/;"	f
+vw_timerSetup	VirtualWire/VirtualWire.cpp	115;"	d	file:
+vw_timerSetup	VirtualWire/avr.cpp	11;"	d	file:
+vw_timerSetup	VirtualWire/avr.h	11;"	d
+vw_timerSetup	VirtualWire/mavr.h	11;"	d
+vw_timer_calc	VirtualWire/VirtualWire.cpp	/^uint8_t vw_timer_calc(uint16_t speed, uint16_t max_ticks, uint16_t *nticks)$/;"	f
+vw_tx_active	VirtualWire/VirtualWire.cpp	/^uint8_t vw_tx_active()$/;"	f
+vw_tx_bit	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_tx_bit = 0;$/;"	v	file:
+vw_tx_buf	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_tx_buf[(VW_MAX_MESSAGE_LEN * 2) + VW_HEADER_LEN] $/;"	v	file:
+vw_tx_enabled	VirtualWire/VirtualWire.cpp	/^static volatile uint8_t vw_tx_enabled = 0;$/;"	v	file:
+vw_tx_index	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_tx_index = 0;$/;"	v	file:
+vw_tx_len	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_tx_len = 0;$/;"	v	file:
+vw_tx_msg_count	VirtualWire/VirtualWire.cpp	/^static uint16_t vw_tx_msg_count = 0;$/;"	v	file:
+vw_tx_pin	VirtualWire/VirtualWire.cpp	/^	static uint8_t vw_tx_pin = 12;$/;"	v	file:
+vw_tx_sample	VirtualWire/VirtualWire.cpp	/^static uint8_t vw_tx_sample = 0;$/;"	v	file:
+vw_tx_start	VirtualWire/VirtualWire.cpp	/^void vw_tx_start()$/;"	f
+vw_tx_stop	VirtualWire/VirtualWire.cpp	/^void vw_tx_stop()$/;"	f
+vw_wait_rx	VirtualWire/VirtualWire.cpp	/^void vw_wait_rx()$/;"	f
+vw_wait_rx_max	VirtualWire/VirtualWire.cpp	/^uint8_t vw_wait_rx_max(unsigned long milliseconds)$/;"	f
+vw_wait_tx	VirtualWire/VirtualWire.cpp	/^void vw_wait_tx()$/;"	f

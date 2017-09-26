@@ -1,0 +1,608 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+                              RadioHead/RH_ASK.o (__udivmodsi4)
+/usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+                              RadioHead/RH_ASK.o (__prologue_saves__)
+/usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+                              RadioHead/RH_ASK.o (__epilogue_restores__)
+/usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o (exit)
+/usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+                              transmitter.o (__do_copy_data)
+/usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+                              transmitter.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+                              transmitter.o (__do_global_ctors)
+/usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+                              /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o) (__tablejump__)
+/usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+                              RadioHead/RH_ASK.o (memcpy_P)
+/usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+                              RadioHead/RH_ASK.o (memcpy)
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 RadioHead/RH_ASK.o
+ .group         0x0000000000000000        0x8 RadioHead/RHGenericDriver.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000002000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o
+LOAD transmitter.o
+LOAD RadioHead/RH_ASK.o
+LOAD RadioHead/RHCRC.o
+LOAD RadioHead/RHGenericDriver.o
+LOAD /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a
+LOAD /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libm.a
+START GROUP
+LOAD /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a
+LOAD /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libm.a
+LOAD /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0xba4
+ *(.vectors)
+ .vectors       0x0000000000000000       0x1e /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x000000000000001e        0xe RadioHead/RH_ASK.o
+                0x000000000000002c                . = ALIGN (0x2)
+                0x000000000000002c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000002c        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000002c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000002c                __ctors_start = .
+ *(.ctors)
+ .ctors         0x000000000000002c        0x2 transmitter.o
+                0x000000000000002e                __ctors_end = .
+                0x000000000000002e                __dtors_start = .
+ *(.dtors)
+                0x000000000000002e                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000002e        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o
+                0x000000000000002e                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000002e        0xc /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000000003a       0x16 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+                0x000000000000003a                __do_copy_data
+ .init4         0x0000000000000050       0x10 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+                0x0000000000000050                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x0000000000000060       0x14 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+                0x0000000000000060                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000074        0x4 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o
+ *(.init9)
+ *(.text)
+ .text          0x0000000000000078        0x2 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o
+                0x0000000000000078                __vector_1
+                0x0000000000000078                __vector_12
+                0x0000000000000078                __bad_interrupt
+                0x0000000000000078                __vector_6
+                0x0000000000000078                __vector_3
+                0x0000000000000078                __vector_11
+                0x0000000000000078                __vector_13
+                0x0000000000000078                __vector_7
+                0x0000000000000078                __vector_5
+                0x0000000000000078                __vector_4
+                0x0000000000000078                __vector_9
+                0x0000000000000078                __vector_2
+                0x0000000000000078                __vector_8
+                0x0000000000000078                __vector_14
+ .text          0x000000000000007a       0x42 transmitter.o
+                0x000000000000007a                _Z14on_off_routinev
+                0x00000000000000a4                _Z23indicate_critical_errorv
+                0x00000000000000ba                __cxa_pure_virtual
+ .text          0x00000000000000bc      0x81a RadioHead/RH_ASK.o
+                0x00000000000000bc                _ZN6RH_ASK16maxMessageLengthEv
+                0x00000000000000c0                _ZN6RH_ASK4recvEPhS0_
+                0x0000000000000122                _ZN6RH_ASKC2Ejhhhb
+                0x0000000000000122                _ZN6RH_ASKC1Ejhhhb
+                0x00000000000001aa                _ZN6RH_ASK9timerCalcEjjPj
+                0x0000000000000276                _ZN6RH_ASK10timerSetupEv
+                0x00000000000002b2                _ZN6RH_ASK11setModeIdleEv
+                0x00000000000002cc                _ZN6RH_ASK9setModeRxEv
+                0x00000000000002e6                _ZN6RH_ASK9setModeTxEv
+                0x000000000000031c                _ZN6RH_ASK4sendEPKhh
+                0x000000000000058a                _ZN6RH_ASK6readRxEv
+                0x000000000000059a                _ZN6RH_ASK7writeTxEb
+                0x00000000000005a6                _ZN6RH_ASK8writePttEb
+                0x00000000000005b2                _ZN6RH_ASK11symbol_6to4Eh
+                0x00000000000005d8                _ZN6RH_ASK13validateRxBufEv
+                0x0000000000000654                _ZN6RH_ASK9availableEv
+                0x000000000000067e                _ZN6RH_ASK12receiveTimerEv
+                0x000000000000079e                _ZN6RH_ASK13transmitTimerEv
+                0x000000000000083a                _ZN6RH_ASK20handleTimerInterruptEv
+                0x000000000000085a                __vector_10
+                0x00000000000008a8                _ZN6RH_ASK4initEv
+ .text          0x00000000000008d6       0xb0 RadioHead/RHCRC.o
+                0x00000000000008d6                _Z14RHcrc16_updatejh
+                0x0000000000000900                _Z19RHcrc_xmodem_updatejh
+                0x000000000000092a                _Z18RHcrc_ccitt_updatejh
+                0x0000000000000964                _Z20RHcrc_ibutton_updatehh
+ .text          0x0000000000000986       0xda RadioHead/RHGenericDriver.o
+                0x0000000000000986                _ZN15RHGenericDriver4initEv
+                0x000000000000098a                _ZN15RHGenericDriver13waitAvailableEv
+                0x00000000000009a8                _ZN15RHGenericDriver20waitAvailableTimeoutEj
+                0x00000000000009ac                _ZN15RHGenericDriver14waitPacketSentEv
+                0x00000000000009bc                _ZN15RHGenericDriver14waitPacketSentEj
+                0x00000000000009c0                _ZN15RHGenericDriver14setPromiscuousEb
+                0x00000000000009c6                _ZN15RHGenericDriver14setThisAddressEh
+                0x00000000000009cc                _ZN15RHGenericDriver11setHeaderToEh
+                0x00000000000009d2                _ZN15RHGenericDriver13setHeaderFromEh
+                0x00000000000009d8                _ZN15RHGenericDriver11setHeaderIdEh
+                0x00000000000009de                _ZN15RHGenericDriver14setHeaderFlagsEhh
+                0x00000000000009ec                _ZN15RHGenericDriver8headerToEv
+                0x00000000000009f2                _ZN15RHGenericDriver10headerFromEv
+                0x00000000000009f8                _ZN15RHGenericDriver8headerIdEv
+                0x00000000000009fe                _ZN15RHGenericDriver11headerFlagsEv
+                0x0000000000000a04                _ZN15RHGenericDriver5sleepEv
+                0x0000000000000a08                _ZN15RHGenericDriverC2Ev
+                0x0000000000000a08                _ZN15RHGenericDriverC1Ev
+                0x0000000000000a30                _ZN15RHGenericDriver8lastRssiEv
+                0x0000000000000a36                _ZN15RHGenericDriver4modeEv
+                0x0000000000000a3e                _ZN15RHGenericDriver7setModeENS_6RHModeE
+                0x0000000000000a46                _ZN15RHGenericDriver11printBufferEPKcPKhh
+                0x0000000000000a48                _ZN15RHGenericDriver5rxBadEv
+                0x0000000000000a50                _ZN15RHGenericDriver6rxGoodEv
+                0x0000000000000a58                _ZN15RHGenericDriver6txGoodEv
+ .text          0x0000000000000a60        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000000a60        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+ .text          0x0000000000000a60        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+ .text          0x0000000000000a60        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ .text          0x0000000000000a60        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+ .text          0x0000000000000a60        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+ .text          0x0000000000000a60        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+ .text          0x0000000000000a60        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+ .text          0x0000000000000a60        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+ .text          0x0000000000000a60        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+                0x0000000000000a60                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x0000000000000a60       0x5e transmitter.o
+                0x0000000000000a7c                main
+ .text.libgcc.mul
+                0x0000000000000abe        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x0000000000000abe       0x44 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+                0x0000000000000abe                __udivmodsi4
+ .text.libgcc   0x0000000000000b02        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000b02        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000b02        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000b02        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000b02        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000b02        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x0000000000000b02        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+ .text.libgcc   0x0000000000000b02        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+ .text.libgcc.prologue
+                0x0000000000000b02       0x38 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+                0x0000000000000b02                __prologue_saves__
+ .text.libgcc.builtins
+                0x0000000000000b3a        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x0000000000000b3a        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x0000000000000b3a        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x0000000000000b3a        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x0000000000000b3a        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+ .text.libgcc   0x0000000000000b3a        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+ .text.libgcc.prologue
+                0x0000000000000b3a       0x36 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+                0x0000000000000b3a                __epilogue_restores__
+ .text.libgcc.builtins
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+ .text.libgcc   0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+ .text.libgcc.div
+                0x0000000000000b70        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+ .text.libgcc   0x0000000000000b70        0xc /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+                0x0000000000000b70                __tablejump2__
+                0x0000000000000b74                __tablejump__
+ .text.libgcc.prologue
+                0x0000000000000b7c        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+ .text.libgcc.builtins
+                0x0000000000000b7c        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+ .text.libgcc.fmul
+                0x0000000000000b7c        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+ .text.libgcc.fixed
+                0x0000000000000b7c        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+ .text.avr-libc
+                0x0000000000000b7c       0x12 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+                0x0000000000000b7c                memcpy_P
+ .text.avr-libc
+                0x0000000000000b8e       0x12 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+                0x0000000000000b8e                memcpy
+                0x0000000000000ba0                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000000ba0        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+                0x0000000000000ba0                exit
+                0x0000000000000ba0                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000000ba0        0x4 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000ba4                _etext = .
+
+.data           0x0000000000800060       0x76 load address 0x0000000000000ba4
+                0x0000000000800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o
+ .data          0x0000000000800060        0x0 transmitter.o
+ .data          0x0000000000800060        0x0 RadioHead/RH_ASK.o
+ .data          0x0000000000800060        0x0 RadioHead/RHCRC.o
+ .data          0x0000000000800060        0x0 RadioHead/RHGenericDriver.o
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+ *(.data*)
+ *(.rodata)
+ .rodata        0x0000000000800060       0x18 RadioHead/RH_ASK.o
+ *(.rodata*)
+ .rodata.str1.1
+                0x0000000000800078        0x6 transmitter.o
+ .rodata._ZTV6RH_ASK
+                0x000000000080007e       0x2c RadioHead/RH_ASK.o
+                0x000000000080007e                _ZTV6RH_ASK
+ .rodata._ZTV15RHGenericDriver
+                0x00000000008000aa       0x2c RadioHead/RHGenericDriver.o
+                0x00000000008000aa                _ZTV15RHGenericDriver
+ *(.gnu.linkonce.d*)
+                0x00000000008000d6                . = ALIGN (0x2)
+                0x00000000008000d6                _edata = .
+                0x00000000008000d6                PROVIDE (__data_end, .)
+
+.bss            0x00000000008000d6       0xfe
+                0x00000000008000d6                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00000000008000d6        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o
+ .bss           0x00000000008000d6       0xfc transmitter.o
+                0x00000000008000d6                driver
+ .bss           0x00000000008001d2        0x2 RadioHead/RH_ASK.o
+ .bss           0x00000000008001d4        0x0 RadioHead/RHCRC.o
+ .bss           0x00000000008001d4        0x0 RadioHead/RHGenericDriver.o
+ .bss           0x00000000008001d4        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000008001d4        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_prologue.o)
+ .bss           0x00000000008001d4        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_epilogue.o)
+ .bss           0x00000000008001d4        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_exit.o)
+ .bss           0x00000000008001d4        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_copy_data.o)
+ .bss           0x00000000008001d4        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_clear_bss.o)
+ .bss           0x00000000008001d4        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_ctors.o)
+ .bss           0x00000000008001d4        0x0 /usr/lib/gcc/avr/4.8.2/avr25/libgcc.a(_tablejump.o)
+ .bss           0x00000000008001d4        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+ .bss           0x00000000008001d4        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+ *(.bss*)
+ *(COMMON)
+                0x00000000008001d4                PROVIDE (__bss_end, .)
+                0x0000000000000ba4                __data_load_start = LOADADDR (.data)
+                0x0000000000000c1a                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008001d4        0x0
+                0x00000000008001d4                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00000000008001d4                PROVIDE (__noinit_end, .)
+                0x00000000008001d4                _end = .
+                0x00000000008001d4                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab           0x0000000000000000     0x39e4
+ *(.stab)
+ .stab          0x0000000000000000      0x6cc /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o
+ .stab          0x00000000000006cc      0x744 transmitter.o
+                                        0x750 (size before relaxing)
+ .stab          0x0000000000000e10     0x1644 RadioHead/RH_ASK.o
+                                       0x1650 (size before relaxing)
+ .stab          0x0000000000002454      0x6f0 RadioHead/RHCRC.o
+                                        0x6fc (size before relaxing)
+ .stab          0x0000000000002b44      0xd98 RadioHead/RHGenericDriver.o
+                                        0xda4 (size before relaxing)
+ .stab          0x00000000000038dc       0x84 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+                                         0x90 (size before relaxing)
+ .stab          0x0000000000003960       0x84 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+                                         0x90 (size before relaxing)
+
+.stabstr        0x0000000000000000     0x308e
+ *(.stabstr)
+ .stabstr       0x0000000000000000     0x308e /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr25/crttn85.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 transmitter.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000000       0x12 RadioHead/RH_ASK.o
+ .comment       0x0000000000000000       0x12 RadioHead/RHCRC.o
+ .comment       0x0000000000000000       0x12 RadioHead/RHGenericDriver.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(transmitter.out elf32-avr)
+LOAD linker stubs
